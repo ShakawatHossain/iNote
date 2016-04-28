@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="gnt.com.inote.FloatingFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@drawable/ic_clear_24dp" />
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/fab"
+        android:layout_alignParentRight="true">
+        <TableRow>
+            <TextView
+                android:id="@+id/t_todo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Todo"
+                android:layout_gravity="center_vertical"
+                android:textSize="@dimen/t_size"/>
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/todo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/fab_margin"
+                android:src="@drawable/ic_add_24dp" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/t_goals"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Plans"
+                android:layout_gravity="center_vertical"
+                android:textSize="@dimen/t_size"/>
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/goals"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/fab_margin"
+                android:src="@drawable/ic_add_24dp" />
+        </TableRow>
+    </TableLayout>
+
+
+
+
+</RelativeLayout>
