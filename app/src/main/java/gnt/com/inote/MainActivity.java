@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity
     FragmentManager fManager;
     FragmentTransaction fTransaction;
     FrameLayout fLayout;
+    FloatingActionButton fab;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,7 +34,7 @@ public class MainActivity extends AppCompatActivity
         setSupportActionBar(toolbar);
         fLayout = (FrameLayout) findViewById(R.id.frame);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
